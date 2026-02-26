@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Karan Verma | Game Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #0f0f14;
+    color: #ffffff;
+    line-height: 1.6;
+}
+
+header {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    color: #00ffd5;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #cccccc;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-bottom: 40px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #00ffd5;
+    font-weight: 500;
+}
+
+section {
+    padding: 60px 10%;
+}
+
+.section-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #00ffd5;
+}
+
+.card {
+    background: #1a1a22;
+    padding: 25px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0,255,213,0.2);
+}
+
+.skills span {
+    display: inline-block;
+    background: #1f1f2e;
+    padding: 8px 14px;
+    border-radius: 20px;
+    margin: 6px;
+    font-size: 0.9rem;
+    border: 1px solid #00ffd5;
+}
+
+.project-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    background: #111118;
+    color: #aaaaaa;
+}
+
+.contact a {
+    color: #00ffd5;
+    text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+}
+
+</style>
+</head>
+<body>
+
+<header>
+    <h1>Karan Verma</h1>
+    <p>Unity Game Developer | Gameplay Systems | C# | AR/VR Enthusiast</p>
+</header>
+
+<nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="card">
+        <p>
+            B.Tech CSE (Gaming Technology) student at VIT with strong experience in Unity (2D & 3D), 
+            gameplay systems, AI mechanics, and multiplayer architecture. 
+            Passionate about building immersive player-centric experiences and scalable game systems.
+        </p>
+    </div>
+</section>
+
+<section id="skills">
+    <h2 class="section-title">Skills</h2>
+    <div class="card skills">
+        <span>C#</span>
+        <span>C++</span>
+        <span>Python</span>
+        <span>Unity (2D & 3D)</span>
+        <span>Unreal Engine</span>
+        <span>Blender</span>
+        <span>Game Physics</span>
+        <span>AI Systems</span>
+        <span>Animation Systems</span>
+        <span>Web3Auth SDK</span>
+        <span>Node.js</span>
+        <span>Multiplayer Architecture</span>
+    </div>
+</section>
+
+<section id="projects">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="card">
+        <div class="project-title">2D Platformer (Unity)</div>
+        <p>
+            Built a side-scrolling platformer using Tilemap system.
+            Implemented player controller with physics, grounded checks, double jump,
+            animator controller integration, and core systems like Game Manager and respawn logic.
+        </p>
+    </div>
+
+    <div class="card">
+        <div class="project-title">Echoes Of The Shadows – 3D Horror Game</div>
+        <p>
+            Developed an atmospheric horror experience with dynamic lighting, 
+            AI ghost behavior, jump-scare systems, resource management, and interactive mechanics.
+            Built complete game management and immersive suspense-driven gameplay flow.
+        </p>
+    </div>
+
+    <div class="card">
+        <div class="project-title">Game KYC Web3 Onboarding</div>
+        <p>
+            Designed multiplayer onboarding system integrating KYC verification, 
+            Web3 wallet creation, Polygon testnet interaction, and NFT minting.
+            Optimized client-server communication and gameplay flow for scalability.
+        </p>
+    </div>
+
+</section>
+
+<section id="contact">
+    <h2 class="section-title">Contact</h2>
+    <div class="card contact">
+        <p>Email: <a href="mailto:karanverma1362003@gmail.com">karanverma1362003@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://linkedin.com/in/karanverma" target="_blank">linkedin.com/in/karanverma</a></p>
+        <p>GitHub: <a href="https://github.com/karanverma" target="_blank">github.com/karanverma</a></p>
+    </div>
+</section>
+
+<footer>
+    © 2026 Karan Verma | Built with ❤️ using HTML & CSS
+</footer>
+
+</body>
+</html>
