@@ -1,199 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Karan Verma | Game Developer</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karan Verma | Game Designer Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
+        body {
+            background-color: #0f0f14;
+            color: #f5f5f5;
+            line-height: 1.6;
+        }
 
-body {
-    background-color: #0f0f14;
-    color: #ffffff;
-    line-height: 1.6;
-}
+        header {
+            padding: 80px 10%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
 
-header {
-    padding: 60px 10%;
-    text-align: center;
-}
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+        }
 
-header h1 {
-    font-size: 3rem;
-    color: #00ffd5;
-}
+        h2 {
+            font-size: 1.5rem;
+            color: #a78bfa;
+            margin-top: 10px;
+        }
 
-header p {
-    margin-top: 10px;
-    font-size: 1.2rem;
-    color: #cccccc;
-}
+        p {
+            margin-top: 20px;
+            max-width: 700px;
+            color: #cfcfcf;
+        }
 
-nav {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    padding-bottom: 40px;
-}
+        .btn-group {
+            margin-top: 30px;
+        }
 
-nav a {
-    text-decoration: none;
-    color: #00ffd5;
-    font-weight: 500;
-}
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            margin-right: 15px;
+            background: #7c3aed;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-weight: 500;
+            transition: 0.3s ease;
+        }
 
-section {
-    padding: 60px 10%;
-}
+        .btn:hover {
+            background: #5b21b6;
+        }
 
-.section-title {
-    font-size: 2rem;
-    margin-bottom: 30px;
-    color: #00ffd5;
-}
+        section {
+            padding: 80px 10%;
+        }
 
-.card {
-    background: #1a1a22;
-    padding: 25px;
-    border-radius: 12px;
-    margin-bottom: 20px;
-    transition: 0.3s;
-}
+        .section-title {
+            font-size: 2rem;
+            margin-bottom: 40px;
+            border-left: 4px solid #7c3aed;
+            padding-left: 15px;
+        }
 
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 0 20px rgba(0,255,213,0.2);
-}
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
 
-.skills span {
-    display: inline-block;
-    background: #1f1f2e;
-    padding: 8px 14px;
-    border-radius: 20px;
-    margin: 6px;
-    font-size: 0.9rem;
-    border: 1px solid #00ffd5;
-}
+        .card {
+            background: #1a1a24;
+            padding: 30px;
+            border-radius: 16px;
+            transition: 0.3s ease;
+        }
 
-.project-title {
-    font-size: 1.3rem;
-    font-weight: 600;
-    margin-bottom: 10px;
-}
+        .card:hover {
+            transform: translateY(-5px);
+            background: #202032;
+        }
 
-footer {
-    text-align: center;
-    padding: 30px;
-    background: #111118;
-    color: #aaaaaa;
-}
+        .card h3 {
+            margin-bottom: 15px;
+            color: #e9d5ff;
+        }
 
-.contact a {
-    color: #00ffd5;
-    text-decoration: none;
-}
+        .tag {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 0.8rem;
+            background: #2a2a3a;
+            padding: 6px 10px;
+            border-radius: 6px;
+            margin-right: 8px;
+            color: #c4b5fd;
+        }
 
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-}
+        footer {
+            text-align: center;
+            padding: 40px;
+            background: #0a0a10;
+            color: #888;
+            font-size: 0.9rem;
+        }
 
-</style>
+        @media(max-width: 768px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
 <header>
     <h1>Karan Verma</h1>
-    <p>Unity Game Developer | Gameplay Systems | C# | AR/VR Enthusiast</p>
+    <h2>Game Designer | Gameplay Systems | Level Design</h2>
+    <p>
+        Game Design-focused B.Tech CSE (Gaming Technology) student crafting immersive, player-centric experiences. 
+        Passionate about gameplay mechanics, level flow, player psychology, and systems balancing. 
+        I design engaging loops, meaningful progression, and immersive worlds that prioritize player experience first.
+    </p>
+    <div class="btn-group">
+        <a href="mailto:karanverma1362003@gmail.com" class="btn">Contact Me</a>
+        <a href="https://github.com/karanverma" target="_blank" class="btn">GitHub</a>
+        <a href="https://linkedin.com/in/karanverma" target="_blank" class="btn">LinkedIn</a>
+    </div>
 </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-</nav>
-
-<section id="about">
-    <h2 class="section-title">About Me</h2>
-    <div class="card">
-        <p>
-            B.Tech CSE (Gaming Technology) student at VIT with strong experience in Unity (2D & 3D), 
-            gameplay systems, AI mechanics, and multiplayer architecture. 
-            Passionate about building immersive player-centric experiences and scalable game systems.
-        </p>
+<section>
+    <div class="section-title">Game Design Expertise</div>
+    <div class="grid">
+        <div class="card">
+            <h3>Gameplay Systems Design</h3>
+            <p>Designed core gameplay loops, player progression systems, difficulty balancing, and reward mechanics focused on engagement and retention.</p>
+            <span class="tag">Core Loops</span>
+            <span class="tag">Balancing</span>
+            <span class="tag">Game Feel</span>
+        </div>
+        <div class="card">
+            <h3>Level & Environment Design</h3>
+            <p>Built structured level flows using pacing principles, tension curves, spatial storytelling, and interactive environmental mechanics.</p>
+            <span class="tag">Pacing</span>
+            <span class="tag">Spatial Flow</span>
+            <span class="tag">Player Guidance</span>
+        </div>
+        <div class="card">
+            <h3>Player Experience & Onboarding</h3>
+            <p>Created intuitive onboarding flows, interactive tutorials, UI feedback systems, and player behavior-driven design improvements.</p>
+            <span class="tag">UX in Games</span>
+            <span class="tag">Retention</span>
+            <span class="tag">FTUE</span>
+        </div>
     </div>
 </section>
 
-<section id="skills">
-    <h2 class="section-title">Skills</h2>
-    <div class="card skills">
-        <span>C#</span>
-        <span>C++</span>
-        <span>Python</span>
-        <span>Unity (2D & 3D)</span>
-        <span>Unreal Engine</span>
-        <span>Blender</span>
-        <span>Game Physics</span>
-        <span>AI Systems</span>
-        <span>Animation Systems</span>
-        <span>Web3Auth SDK</span>
-        <span>Node.js</span>
-        <span>Multiplayer Architecture</span>
+<section>
+    <div class="section-title">Selected Design Projects</div>
+    <div class="grid">
+        <div class="card">
+            <h3>2D Platformer – Mechanics-Driven Design</h3>
+            <p>Designed responsive player movement, double jump risk-reward mechanics, level progression curves, and feedback-driven animation systems to enhance game feel.</p>
+            <span class="tag">Platformer Design</span>
+            <span class="tag">Mechanics Tuning</span>
+        </div>
+        <div class="card">
+            <h3>Echoes of the Shadows – Horror Experience</h3>
+            <p>Designed tension-based gameplay systems including adaptive AI behavior, resource scarcity mechanics, environmental storytelling, and suspense pacing.</p>
+            <span class="tag">Horror Design</span>
+            <span class="tag">AI Behavior</span>
+        </div>
+        <div class="card">
+            <h3>Web3 Multiplayer Onboarding</h3>
+            <p>Designed seamless multiplayer onboarding flow integrating KYC verification, wallet creation, and player progression systems for frictionless user entry.</p>
+            <span class="tag">System Design</span>
+            <span class="tag">Onboarding Flow</span>
+        </div>
     </div>
 </section>
 
-<section id="projects">
-    <h2 class="section-title">Projects</h2>
-
+<section>
+    <div class="section-title">Education</div>
     <div class="card">
-        <div class="project-title">2D Platformer (Unity)</div>
-        <p>
-            Built a side-scrolling platformer using Tilemap system.
-            Implemented player controller with physics, grounded checks, double jump,
-            animator controller integration, and core systems like Game Manager and respawn logic.
-        </p>
-    </div>
-
-    <div class="card">
-        <div class="project-title">Echoes Of The Shadows – 3D Horror Game</div>
-        <p>
-            Developed an atmospheric horror experience with dynamic lighting, 
-            AI ghost behavior, jump-scare systems, resource management, and interactive mechanics.
-            Built complete game management and immersive suspense-driven gameplay flow.
-        </p>
-    </div>
-
-    <div class="card">
-        <div class="project-title">Game KYC Web3 Onboarding</div>
-        <p>
-            Designed multiplayer onboarding system integrating KYC verification, 
-            Web3 wallet creation, Polygon testnet interaction, and NFT minting.
-            Optimized client-server communication and gameplay flow for scalability.
-        </p>
-    </div>
-
-</section>
-
-<section id="contact">
-    <h2 class="section-title">Contact</h2>
-    <div class="card contact">
-        <p>Email: <a href="mailto:karanverma1362003@gmail.com">karanverma1362003@gmail.com</a></p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/karanverma" target="_blank">linkedin.com/in/karanverma</a></p>
-        <p>GitHub: <a href="https://github.com/karanverma" target="_blank">github.com/karanverma</a></p>
+        <h3>B.Tech CSE (Gaming Technology)</h3>
+        <p>VIT Bhopal University | 2022 – 2026 | CGPA: 8.14/10</p>
     </div>
 </section>
 
 <footer>
-    © 2026 Karan Verma | Built with ❤️ using HTML & CSS
+    © 2026 Karan Verma | Game Designer Portfolio
 </footer>
 
 </body>
